@@ -5,10 +5,9 @@ const corsMiddleware = require('restify-cors-middleware')
 const dialogflow = require('dialogflow');
 const uuid = require('uuid');
 
-const cors = corsMiddleware({  
-    origins: ["*"],
-    allowHeaders: ["Authorization"],
-    exposeHeaders: ["Authorization"]
+const cors = corsMiddleware({
+  preflightMaxAge: 5,
+  origins: ['*']
 });
 
 process.env.GOOGLE_APPLICATION_CREDENTIALS=config.appCredentials;
