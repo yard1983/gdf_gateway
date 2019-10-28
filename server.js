@@ -13,15 +13,15 @@ var server = restify.createServer({
 
 var endpoint = '/gdf/';
 
-server.use(restify.plugins.bodyParser());
+restify.CORS.ALLOW_HEADERS.push('accept');
+restify.CORS.ALLOW_HEADERS.push('sid');
+restify.CORS.ALLOW_HEADERS.push('lang');
+restify.CORS.ALLOW_HEADERS.push('origin');
+restify.CORS.ALLOW_HEADERS.push('withcredentials');
+restify.CORS.ALLOW_HEADERS.push('x-requested-with');
+server.use(restify.CORS());
 
-server.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
-    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
-    res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
-    next();
-});
+server.use(restify.plugins.bodyParser());
 
 
 server.post(endpoint + "intent", function (req, resMain, next) {
