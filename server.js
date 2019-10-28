@@ -74,6 +74,10 @@ server.post(endpoint + "intent", function (req, resMain, next) {
   return next();
 });
 
+server.get('/', function (req, res) { 
+    res.render('index.html', {});  
+});
+
 // Start the server:
 server.listen(config.port, function () {
     console.log('%s listening at %s', server.name, server.url);
