@@ -77,7 +77,7 @@ server.post(endpoint + "intent", function (req, resMain, next) {
 server.get(/\/?.*/, restify.plugins.serveStatic({
   directory: './public',
   default: 'index.html'
-}))
+}));
 
 // Start the server:
 server.listen(config.port, function () {
