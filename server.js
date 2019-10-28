@@ -1,6 +1,5 @@
 var config = require('./config');
 var restify = require('restify');
-const corsMiddleware = require('restify-cors-middleware');
 
 const dialogflow = require('dialogflow');
 const uuid = require('uuid');
@@ -16,14 +15,19 @@ var server = restify.createServer({
     version: '1.0.0'
 });
 
-server.pre(cors.preflight);
-server.use(cors.actual);
+server.use(restify.CORS());
+server.use(restify.plugins.bodyParser());
 
 var endpoint = '/gdf/';
 
 
-server.use(restify.plugins.bodyParser());
-
+server.opts(/.*/, function (req,res,next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", req.header("Access-Control-Request-Method"));
+    res.header("Access-Control-Allow-Headers", req.header("Access-Control-Request-Headers"));
+    res.send(200);
+    return next();
+});
 
 server.post(endpoint + "intent", function (req, resMain, next) {
 
