@@ -6,28 +6,24 @@ const uuid = require('uuid');
 
 process.env.GOOGLE_APPLICATION_CREDENTIALS=config.appCredentials;
 
-const cors = corsMiddleware({
-  origins: ['*']
-});
-
 var server = restify.createServer({
     name: config.name,
     version: '1.0.0'
 });
 
-server.use(restify.CORS());
+//server.use(restify.CORS());
 server.use(restify.plugins.bodyParser());
+
+//server.opts(/.*/, function (req,res,next) {
+  //  res.header("Access-Control-Allow-Origin", "*");
+  //  res.header("Access-Control-Allow-Methods", req.header("Access-Control-Request-Method"));
+  //  res.header("Access-Control-Allow-Headers", req.header("Access-Control-Request-Headers"));
+  //  res.send(200);
+  //  return next();
+//});
 
 var endpoint = '/gdf/';
 
-
-server.opts(/.*/, function (req,res,next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", req.header("Access-Control-Request-Method"));
-    res.header("Access-Control-Allow-Headers", req.header("Access-Control-Request-Headers"));
-    res.send(200);
-    return next();
-});
 
 server.post(endpoint + "intent", function (req, resMain, next) {
 
