@@ -1,25 +1,26 @@
 var config = require('./config');
 var restify = require('restify');
+const corsMiddleware = require('restify-cors-middleware');
 
 const dialogflow = require('dialogflow');
 const uuid = require('uuid');
 
 process.env.GOOGLE_APPLICATION_CREDENTIALS=config.appCredentials;
 
+const cors = corsMiddleware({
+  origins: ['*']
+});
+
 var server = restify.createServer({
     name: config.name,
     version: '1.0.0'
 });
 
+server.pre(cors.preflight);
+server.use(cors.actual);
+
 var endpoint = '/gdf/';
 
-restify.CORS.ALLOW_HEADERS.push('accept');
-restify.CORS.ALLOW_HEADERS.push('sid');
-restify.CORS.ALLOW_HEADERS.push('lang');
-restify.CORS.ALLOW_HEADERS.push('origin');
-restify.CORS.ALLOW_HEADERS.push('withcredentials');
-restify.CORS.ALLOW_HEADERS.push('x-requested-with');
-server.use(restify.CORS());
 
 server.use(restify.plugins.bodyParser());
 
