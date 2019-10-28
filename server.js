@@ -17,9 +17,9 @@ var server = restify.createServer({
     version: '1.0.0'
 });
 
-//server.use(restify.plugins.bodyParser({"params":true})); server.use(cors.actual);
+
 server.pre(cors.preflight);  
-server.use(cors.actual);  
+server.use(restify.plugins.bodyParser({"params":true})); server.use(cors.actual);
 
 var endpoint = '/gdf/';
 
