@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "davichatbot-ydtkwn",
+  "private_key_id": "e0ce6aa3e060d622b6ba4ed4678b02e7696af2ed",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCWeyoN3DKhqSRe\nAvQfI8IXlhLFRJwbTIzlrrkuFiaGRirazik66/kUfZPKyntzYL0qslKr+9fJuR+A\noP8L43N5DHJBpokPDXQ24XqKwXoI02A5DqnTcgG2KRAOjsoF8KCalbqUUIO5bw+s\nXBnKwMiqQMiYPt6ThiOcqLssyoaIApdBi3liN4isek4ExUnA5FxP9som8nKAcFM0\n4yEzfAYOpQbc+iOHnEeerNXlmmEypaqp+Z+kF2mVZzoSOFNMGkweqxKUVuTDn37Z\nB26PhPexX6UnkKoIeFzI6HJ6tJaZESP5CFxyjMqwc9ZK7SPOcAN70n8t2fWMaoUv\n6OBF0qxnAgMBAAECggEAD9QNtN6EDuAZPLBH2FytBkkZWVmhp/dx3Jj3zoKy862+\nxTwpNxLqJL8exBZvTNAQpcSTEJcReBz6VM/ac/gtRb7K59/qC8TJBBrMhnraaMI/\nHVFPCLg1uODx2O4pDt3kLs5wDTi42lD1z5XyepKzqMDeuLDoPZE+/rP62DfHVdfy\nkgevhlny+k5tHgXAy49qbJHl4VNAwEkAZHT6CzJG4XTIStPLXaCvXlUeHhJ8CprM\nM5BXeBzHmLBAXB+i6AdTlQvs013vX09OfeLipNNVuqaN1FiYZShuttUMtXm9nJad\nKdB+i41io14AujjKitRCUkiCSl57geO9PYfkR+6LMQKBgQDPPMbErZNAiQlagT/9\ndtnsVtSkJrEnvN2P9MFCihernVgh8wGJ6TZBTLKQ51qPsNPv+uPiF+lmMuw1TzUK\nk3j+1HYWAvtaTCo+iy+qh6RPo5eaCuPzpVOCiwTR/VRS4qBjgieL/1pomXT0DPVj\n46Ox1T6JtSmCYD+IVKFntlMvsQKBgQC545iV9I3zWLLMBWRA266ZfgOfyBmNoG7O\n23EU7h6gdGUsFPQLL1JS7pndfKOsjZQzjLHqnUWWTC+OOhdH6qmsDFZggnmJygFy\n1u/BOBmaaB+0ZvNIAiZl/rEVK+aL7kkGadsjObGRgPDON5kigouCoc/udQotFQ9V\ntsmo4a/7lwKBgQCQ/zcbmU60Eq2Gs3QwRZ4ILGCvUZsV8KEc/eTSR4h0PKzTZBEp\nixC4847kr9q/Oruu5t3W7WASb4Kxce/srG417jWJBSEUdsH/7Ka3LByc1BtYXlJL\nwNsDNX1z50m+jG4n8YL2Av4gvW4E66Qt9bIs1MTi2OxoGiuZmY0s4XamoQKBgCLY\nXBj3/8f2/4UpGZLi20bgjVNdUhTvVvYlwnvW6xzO1Mw/nUOfekIbgfI31AKbg4Vq\nQUumcY3r+BokH4sWnPmoUmTC8H94w27Aha7lkj8Ud6T8i2wbIxGJfa5nTU87uqqe\nGzruLLAGyJ0PZQBIEljJdk3P2Ll8siQyIHks3S0/AoGAcJ5VL6Ut78S60eu7YIo4\no282lWUaVyYVoIB9o4+7oWQAVrkuGyKrsh8UYsV5v/DcWL4RqOXXi/1UH/RXDMsY\nZmLEkX7CJsMftmYxxQ8K9wLQWRj11+97d6xFvYH7h18WCzneeSC1QRl8DFoab75L\n2S7B/u8TqXzBov6zhq57AsE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "chatbotdemodavivienda@davichatbot-ydtkwn.iam.gserviceaccount.com",
+  "client_id": "117531471978219426192",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/chatbotdemodavivienda%40davichatbot-ydtkwn.iam.gserviceaccount.com"
+}
